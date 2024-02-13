@@ -5,6 +5,7 @@ import Blog from './sections/Blog';
 import Expansion from './sections/Expansion';
 import Hero from './sections/Hero'
 import Invest from './sections/Invest';
+import Testimonials from './sections/Testimonials';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Invest />
     <Blog />
     <Expansion />
+    <Testimonials />
   </>
   );
 }
