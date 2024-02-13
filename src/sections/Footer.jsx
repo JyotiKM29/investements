@@ -8,7 +8,7 @@ const Footer = () => {
 
 <div className='flex flex-col lg:flex-row justify-evenly'>
   <Address />
-  <div className='flex justify-between'>
+  <div className='flex justify-between lg:gap-[30%]'>
   <div>
     <h4 className='text-white/90 text-2xl my-8 '>Menu</h4>
     <ul>
@@ -20,13 +20,13 @@ const Footer = () => {
     </ul>
   </div>
   <div>
-  <h4 className='text-white/90 text-2xl my-8'>Useful link</h4>
+  <h4 className='text-white/90 text-2xl my-8 text-nowrap'>Useful link</h4>
     <ul>
       <li  className='text-white/70 text-base font-light'>Home</li>
       <li  className='text-white/70 text-base font-light'>Company</li>
-      <li  className='text-white/70 text-base font-light'>Privacy Policy</li>
-      <li  className='text-white/70 text-base font-light'>Terms and Conditions</li>
-      <li  className='text-white/70 text-base font-light'>Return & Refund</li>
+      <li  className='text-white/70 text-base font-light text-nowrap'>Privacy Policy</li>
+      <li  className='text-white/70 text-base font-light text-nowrap'>Terms and Conditions</li>
+      <li  className='text-white/70 text-base font-light text-nowrap'>Return & Refund</li>
     </ul>
   </div>
   </div>

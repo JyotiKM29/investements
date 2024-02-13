@@ -17,8 +17,14 @@ const Blogpost2 = () => {
       added activity to beta test. Override the digital divide
       with additional clickthroughs
     </p>
-    <button className="text-left text-lg bg-gradient-to-b bg-clip-text to-[#C59B4F] from-[#F1C27A] text-transparent ">
-      Read More...
+    <button className='self-start'>
+     
+      <a href="#" className="min-w relative group  rounded-sm">
+     <span className="text-left text-lg bg-gradient-to-b bg-clip-text to-[#C59B4F] from-[#F1C27A] text-transparent ">
+     Read More...
+     </span> 
+              <div className="absolute left-0 bottom-0 w-full h-[1px] bg-[#F0D77B] scale-x-0 group-hover:scale-x-100 transition-transform -mb-1"></div>
+            </a>
     </button>
   </div>
   )

@@ -57,7 +57,8 @@ const Blog = () => {
               </div>
             </div>
 
-            <button className="self-center my-10 border border-[#F0D77B] text-[#F0D77B] px-6 py-2 text-xl rounded-md">Explore More</button>
+            <button className="self-center my-10 border
+             border-[#F0D77B] text-[#F0D77B] px-6 py-2 text-xl rounded-md hover:bg-[#F0D77B]/10 active: active:animate-bounce transition ">Explore More</button>
           </div>
        
       </div>

@@ -1,79 +1,48 @@
-
 import { Tally3 } from "lucide-react";
 import React, { useEffect } from "react";
 
+const list =[
+  'COMPANY',
+  'INVESTORS',
+  'PRODUCTS',
+  'JOURNAL',
+  'REACH US'
+]
 
 const Navbar = () => {
- 
-
   return (
     <header className="inset-0 z-50  bg-zinc-950/80 backdrop-blur transition will-change-auto ">
-      <div className="mx-auto max-w-screen   px-8 md:px-16 py-2">
+      <div className="mx-auto max-w-screen px-8 md:px-16 py-2">
         <div className="flex items-center justify-between">
           {/* brand name  */}
           <div className="flex">
-           <img src="/Unified logo.svg" alt='logo' className="h-12 w-18 md:h-2/3 md:w-2/3 lg:h-full lg:w-full" />
+            <img src="/Unified logo.svg" alt='logo' className="h-12 w-18 md:h-2/3 md:w-2/3 lg:h-full lg:w-full" />
           </div>
 
           {/* navbar */}
-          <nav className=" z-50 col-span-4 lg:flex w-full items-center justify-end hidden ">
-           
-              <ul
-                data-orientation="horizontal"
-                className="flex items-center"
-                dir="ltr"
+          <nav className="z-50 col-span-4 lg:flex w-full items-center justify-end hidden">
+            <ul
+              data-orientation="horizontal"
+              className="flex items-center"
+              dir="ltr"
+            >
+              {list.map((data, index) => (
+                <li
+                  key={index}
+                  className="flex select-none items-center gap-0.5 rounded-md px-4 py-2 opacity-60 hover:opacity-100 hover:cursor-pointer"
+                >
+                  <a href="#" className="relative group">
+                    <div className="absolute w-1/3 h-0.5 bg-[#FEB564] scale-x-0 group-hover:scale-x-100 transition-transform -mt-1"></div>
+                    {data}
+                  </a>
+                </li>
+              ))}
+              <li
+                className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
               >
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                    COMPANY
-                  
-                </li>
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                    INVESTORS
-                  
-                </li>
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                    PRODUCTS
-                  
-                </li>
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                    JOURNAL
-                  
-                </li>
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                    REACH US
-                  
-                </li>
-                <li
-                
-                   
-                    className="flex select-none items-center gap-0.5 rounded-full px-4 py-2 opacity-60 hover:bg-white/5 hover:opacity-100"
-                  >
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  
-                </li>
-                
-              </ul>
-           
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </li>
+            </ul>
           </nav>
 
           <Tally3 strokeWidth={1} className="lg:hidden rotate-90"/>
