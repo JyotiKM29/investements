@@ -4,10 +4,10 @@ import Blogpost2 from "../component/Blogpost2";
 
 const Blog = () => {
   return (
-    <section  className=' mx-auto max-w-screen  min-h-screen lg:h-screen'>
-    <div className="mx-auto flex  flex-col  justify-center max-w-screen-2xl   px-8 md:px-24 py-4 min-h-full lg:h-full">
-        <div className="flex-col  justify-center space-y-7">
-          <header className="uppercase text-center lg:text-left text-4xl lg:text-6xl font-semibold">
+    <section  className=' mx-auto max-w-screen min-h-[230vh] md:max-h-[160vh] lg:min-h-[120vh]  ' >
+    <div className="mx-auto flex  flex-col gap-4  max-w-screen-2xl   px-8 md:px-24 py-4 h-full ">
+        <div className="flex-col  justify-center gap-4">
+          <header className="uppercase text-center lg:text-left text-4xl lg:text-6xl font-semibold ">
             <h3>
               Our <span className="gradient">Blog</span>
             </h3>
@@ -19,7 +19,7 @@ const Blog = () => {
             guidance and support required to maximize profits both from a short
             and long-term perspective through their entire investment journey.{" "}
           </p>
-
+          </div>
           {/* grid */}
 
           <div className=" flex flex-col h-[78vh] justify-between">
@@ -59,7 +59,7 @@ const Blog = () => {
 
             <button className="self-center my-10 border border-[#F0D77B] text-[#F0D77B] px-6 py-2 text-xl rounded-md">Explore More</button>
           </div>
-        </div>
+       
       </div>
     </section>
   );

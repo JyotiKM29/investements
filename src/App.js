@@ -21,10 +21,10 @@ function App() {
     <Hero />
     <Invest />
     <Blog />
-    {/* <Expansion />
-    <Testimonials />
+     <Expansion />
+  <Testimonials />
     <Connect />
-    <Footer /> */}
+    <Footer /> 
   </>
   );
 }

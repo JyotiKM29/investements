@@ -3,7 +3,7 @@ import React from 'react'
 
 const Address = () => {
   return (
-    <div className='w-1/3'>
+    <div className='lg:w-1/3'>
     <img src='/Unified logo.svg' alt='logo' />
       <p className='text-lg text-white/70 leading-snug tracking-wider	font-light my-2'>
       Interior Design Center Inc. A USA Based Photo Editing Company in Tokyo, Japan. Corporation NO. 524172-2,  Check Here.
