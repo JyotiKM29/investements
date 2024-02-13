@@ -11,13 +11,15 @@ body{
   /* font-family: 'Noto Serif', serif; */
   background: black;
   color: white;
+  overflow-x: hidden;
 
 }
 @layer utilities {
    .headingPrimary{
     font-size: 4rem;
     font-family: 'Noto Serif', serif;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.25;
    }
    .gradient{
     background-image: linear-gradient(to bottom, #ffe998, #57370d);

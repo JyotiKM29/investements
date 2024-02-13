@@ -1,4 +1,5 @@
 
+import { Tally3 } from "lucide-react";
 import React, { useEffect } from "react";
 
 
@@ -6,16 +7,16 @@ const Navbar = () => {
  
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50  bg-zinc-950/80 backdrop-blur transition will-change-auto ">
-      <div className="mx-auto max-w-screen   px-8 md:px-16 py-4">
+    <header className="inset-0 z-50  bg-zinc-950/80 backdrop-blur transition will-change-auto ">
+      <div className="mx-auto max-w-screen   px-8 md:px-16 py-2">
         <div className="flex items-center justify-between">
           {/* brand name  */}
           <div className="flex">
-           <img src="/Unified logo.svg" alt='logo' />
+           <img src="/Unified logo.svg" alt='logo' className="h-12 w-18 md:h-2/3 md:w-2/3 lg:h-full lg:w-full" />
           </div>
 
           {/* navbar */}
-          <nav className=" z-50 col-span-4 md:flex w-full items-center justify-end hidden ">
+          <nav className=" z-50 col-span-4 lg:flex w-full items-center justify-end hidden ">
            
               <ul
                 data-orientation="horizontal"
@@ -75,7 +76,7 @@ const Navbar = () => {
            
           </nav>
 
-         
+          <Tally3 strokeWidth={1} className="lg:hidden rotate-90"/>
         </div>
       </div>
     </header>
