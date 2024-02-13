@@ -3,7 +3,7 @@ import Address from '../component/Address'
 
 const Footer = () => {
   return (
-    <section  className=' mx-auto max-w-screen  h-screen  px-8 md:px-24 py-4'>
+    <section id='footer' className=' mx-auto max-w-screen  h-screen  px-8 md:px-24 py-4'>
       <div className="mx-auto flex  flex-col  justify-end max-w-screen   h-full  pb-[10%]">
 
 <div className='flex flex-col lg:flex-row justify-evenly'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Expansion = () => {
   return (
-    <section  className=' mx-auto max-w-screen  h-screen  py-12 lg:py-32 '>
+    <section id='expansion' className=' mx-auto max-w-screen  h-screen  py-12 lg:py-32 '>
   
     <div className="min-h-full  flex gap-6 justify-center lg:justify-evenly flex-col  items-center bg-[url('/public/Expansion.png')] bg-cover bg-center h-full w-full object-cover bg-no-repeat ">
     

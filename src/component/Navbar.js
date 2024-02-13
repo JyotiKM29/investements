@@ -2,11 +2,27 @@ import { Tally3 } from "lucide-react";
 import React, { useEffect } from "react";
 
 const list =[
-  'COMPANY',
-  'INVESTORS',
-  'PRODUCTS',
-  'JOURNAL',
-  'REACH US'
+ { id:0,
+  name:'COMPANY',
+  link:'#home'
+},
+ { id:1,
+  name:'INVESTORS',
+  link:'#invest'
+},
+ { id:2,
+  name:'PRODUCTS',
+  link:'#blog'
+},
+ { id:3,
+  name:'JOURNAL',
+  link:'#testimonial'
+},
+ { id:4,
+  name:'REACH US',
+  link:'#footer'
+},
+  
 ]
 
 const Navbar = () => {
@@ -28,12 +44,12 @@ const Navbar = () => {
             >
               {list.map((data, index) => (
                 <li
-                  key={index}
+                  key={data.id}
                   className="flex select-none items-center gap-0.5 rounded-md px-4 py-2 opacity-60 hover:opacity-100 hover:cursor-pointer"
                 >
-                  <a href="#" className="relative group">
+                  <a href={data.link} className="relative group">
                     <div className="absolute w-1/3 h-0.5 bg-[#FEB564] scale-x-0 group-hover:scale-x-100 transition-transform -mt-1"></div>
-                    {data}
+                    {data.name}
                   </a>
                 </li>
               ))}

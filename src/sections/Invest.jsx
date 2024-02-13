@@ -20,7 +20,7 @@ const data = [
 
 const Invest = () => {
   return (
-    <section  className='relative mx-auto max-w-screen  min-h-screen lg:h-screen'>
+    <section  id='invest' className='relative mx-auto max-w-screen  min-h-screen lg:h-screen'>
     <div className='-ml-20 absolute -z-10 grid  grid-cols-4 lg:grid-cols-6 divide-x-[.5px] divide-white/20  h-full w-full '>
            <div className='w-1/6 h-screen'></div>
            <div className='w-1/6 h-screen'></div>
@@ -44,7 +44,7 @@ const Invest = () => {
     <div className='  flex flex-col lg:flex-row gap-10 '>
     {
         data.map((data) => (
-            <div className='  h-[11rem] lg:w-1/3 lg:h-[20rem] bg-[#1A1A1A] rounded-lg px-4 py-4  border-b-2 border-[#F0D77B]'>
+            <div className='  h-[11rem] lg:w-1/3 lg:h-[20rem] bg-[#1A1A1A] rounded-lg px-4 py-4  border-b-2 border-[#F0D77B] hover:scale-105 transition-transform'>
                 <h4 className='text-center lg:text-left text-xl text-[#F0D77B] lg:text-2xl '>{data.topic}</h4>
                 <p className='text-center lg:text-left font-light   lg:text-lg text-base text-zinc-500 leading-snug tracking-wider  '>{data.detail}</p>
             </div>

@@ -44,13 +44,13 @@ const Hero = () => {
           {/* part 2 */}
           <div className="   min-h min-w">
             <ul className="flex lg:flex-col  gap-4 lg:gap-28">
-              <li className="font-light text-white/80 lg:rotate-90">
+              <li className="font-light text-white/80 lg:rotate-90 hover:text-white hover:font-normal transition-transform hover:scale-110">
                 Facebook
               </li>
-              <li className="font-light text-white/80 lg:rotate-90">
+              <li className="font-light text-white/80 lg:rotate-90 hover:text-white hover:font-normal transition-transform hover:scale-110">
                 Instagram
               </li>
-              <li className="font-light text-white/80 lg:rotate-90">Twitter</li>
+              <li className="font-light text-white/80 lg:rotate-90 hover:text-white hover:font-normal transition-transform hover:scale-110">Twitter</li>
             </ul>
           </div>
         </div>

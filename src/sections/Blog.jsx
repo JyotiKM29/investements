@@ -4,7 +4,7 @@ import Blogpost2 from "../component/Blogpost2";
 
 const Blog = () => {
   return (
-    <section  className=' mx-auto max-w-screen min-h-[230vh] md:max-h-[160vh] lg:min-h-[120vh]  ' >
+    <section id='blog' className=' mx-auto max-w-screen min-h-[230vh] md:max-h-[160vh] lg:min-h-[120vh]  ' >
     <div className="mx-auto flex  flex-col gap-4  max-w-screen-2xl   px-8 md:px-24 py-4 h-full ">
         <div className="flex-col  justify-center gap-4">
           <header className="uppercase text-center lg:text-left text-4xl lg:text-6xl font-semibold ">

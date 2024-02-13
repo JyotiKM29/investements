@@ -5,7 +5,7 @@ import Review from '../component/Review'
 
 const Testimonials = () => {
   return (
-    <section  className='relative mx-auto max-w-screen  h-screen  overflow-hidden '>
+    <section id='testimonial' className='relative mx-auto max-w-screen  h-screen  overflow-hidden '>
         <div className='-ml-20 absolute -z-10 grid  grid-cols-4 lg:grid-cols-6 divide-x-[.5px] divide-white/20  h-full w-full '>
            <div className='w-1/6 h-screen'></div>
            <div className='w-1/6 h-screen'></div>
