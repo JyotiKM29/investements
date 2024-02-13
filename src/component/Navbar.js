@@ -1,10 +1,10 @@
-import { Tally3 } from "lucide-react";
-import React, { useEffect } from "react";
+import { Tally3, X } from "lucide-react";
+import React, { useState } from "react";
 
 const list =[
  { id:0,
   name:'COMPANY',
-  link:'#home'
+  link:'#hero'
 },
  { id:1,
   name:'INVESTORS',
@@ -26,8 +26,9 @@ const list =[
 ]
 
 const Navbar = () => {
+  const [show , setShow] = useState(false)
   return (
-    <header className="inset-0 z-50  bg-zinc-950/80 backdrop-blur transition will-change-auto ">
+    <header className="relative inset-0 z-50  bg-zinc-950/80 backdrop-blur transition will-change-auto ">
       <div className="mx-auto max-w-screen px-8 md:px-16 py-2">
         <div className="flex items-center justify-between">
           {/* brand name  */}
@@ -61,7 +62,28 @@ const Navbar = () => {
             </ul>
           </nav>
 
-          <Tally3 strokeWidth={1} className="lg:hidden rotate-90"/>
+          <Tally3 strokeWidth={1} className="lg:hidden rotate-90" onClick={()=>setShow(!show)}/>
+          {
+            show &&<div className="  absolute top-0 right-0 w-full min-h-screen z-100 bg-[#282624]  py-6 overflow-hidden">
+           
+              <ul className="flex mt-16 flex-col justify-center items-center">
+              {list.map((data, index) => (
+                <li
+                  key={data.id}
+                  className="flex select-none items-center gap-0.5 rounded-md px-4 py-2 opacity-60 group-hover:opacity-100 hover:cursor-pointer"
+                >
+                  <a href={data.link} className="relative group" onClick={()=>setShow(false)}>
+                  
+                    {data.name}
+                  </a>
+                </li>
+              ))}
+              <button className="" onClick={()=>setShow(false)}>
+            <X />
+            </button>
+              </ul>
+            </div>
+          }
         </div>
       </div>
     </header>
