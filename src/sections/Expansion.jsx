@@ -2,9 +2,9 @@ import React from 'react'
 
 const Expansion = () => {
   return (
-    <section  className=' mx-auto max-w-screen  h-screen  py-32'>
+    <section  className=' mx-auto max-w-screen  min-h-screen  py-32'>
   
-    <div className=" flex justify-evenly flex-col  items-center bg-[url('/public/Expansion.png')] bg-cover bg-center h-full w-full object-cover bg-no-repeat">
+    <div className="min-h-full  flex justify-evenly flex-col  items-center bg-[url('/public/Expansion.png')] bg-cover bg-center h-full w-full object-cover bg-no-repeat">
 <header className='text-6xl leading-tight text-center font-semibold' style={{fontFamily:'Noto Serif'}}>
     <h2>
   <span className=' bg-gradient-to-b bg-clip-text  to-[#C59B4F] from-[#F1C27A] text-transparent'>

@@ -12,13 +12,13 @@ const Hero = () => {
      
       
     <div className='border hidden lg:block border-b-[.5px] border-white/90 w-4 lg:w-10 lg:-mb-2'></div>
-      <h3 className='text-center  lg:text-left text-4xl  md:text-6xl xl:text-[4.5rem] md:leading-tight' style={{fontFamily:'Noto Serif'}} >
+      <h3 className='text-center  lg:text-left text-4xl  md:text-6xl xl:text-[4.5rem] md:leading-tight' style={{fontFamily:'Noto Serif' , fontWeight:'200'}} >
       Empower Your Business 
-      <span className=" transition font-display font-semibold leading-none bg-gradient-to-b from-1% bg-clip-text text-transparent from-[#FFE998] to-[#57370D] tracking-tight">
+      <span className=" transition font-display font-semibold leading-none bg-gradient-to-b from-1% bg-clip-text text-transparent from-[#FFE998] to-[#57370D] tracking-tight" style={{fontFamily:'Noto Serif' , fontWeight:'200'}}>
       &nbsp;Finances 
       </span> 
       </h3>
-      <p className='text-center lg:text-left font-light text-base text-zinc-500 leading-snug tracking-wider  '>Your Expert Partner in Swift Business Financing, Bridging Gaps, and Ensuring Success. Thrive with Us!</p>
+      <p className='text-center lg:text-left  lg:text-lg font-light text-base text-zinc-500 leading-snug tracking-wider  '>Your Expert Partner in Swift Business Financing, Bridging Gaps, and Ensuring Success. Thrive with Us!</p>
       <button className='flex text-sm lg:text-base gap-2 text-[#F0D77B] my-4'>Discover More <MoveRight  
       className='h-4 w-4'/></button>
     </div>
